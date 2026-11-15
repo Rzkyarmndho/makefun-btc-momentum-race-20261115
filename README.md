@@ -17,7 +17,7 @@ The input is `agent-fun/bars-replay/v1`: one hello, one batch per minute, then d
 
 ## Rules
 
-- Enter after 20 observed close-to-close intervals rise at least 100 basis points, with positive 5-interval momentum.
+- Enter after 20 observed close-to-close intervals rise at least 120 basis points, with positive 5-interval momentum.
 - Spend up to 90% of cash/equity, respecting the harness weight cap and a 20-basis-point estimated impact cap against the latest close depth.
 - Exit on 100-basis-point loss, 20-interval momentum below -20 basis points, an activated 100-basis-point trailing stop, or 360 observed bars held. Winners have no fixed profit cap.
 - Cool down for 30 observed bars after an exit fills.

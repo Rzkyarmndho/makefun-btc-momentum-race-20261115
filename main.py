@@ -7,7 +7,7 @@ from collections import deque
 
 class Strategy:
     LOOKBACK = 20
-    ENTRY_BPS = 100
+    ENTRY_BPS = 120
     EXIT_BPS = -20
     ALLOCATION_BPS = 9000
     IMPACT_BPS = 20

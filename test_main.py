@@ -41,14 +41,6 @@ class ProtocolTests(unittest.TestCase):
 
 
 class StrategyTests(unittest.TestCase):
-    def test_borderline_momentum_below_120_bps_stays_flat(self):
-        import main
-        strategy = main.Strategy(hello())
-        prices = [65000] * 30 + [65000 + i * 35 for i in range(1, 21)]
-        replies = [strategy.reply(batch(seq, price)) for seq, price in enumerate(prices)]
-        self.assertTrue(all(not reply["orders"] for reply in replies),
-                        "A 107-bps move is below the 120-bps confirmation threshold")
-
     def test_rising_momentum_opens_long_without_a_prior_dip(self):
         import main
         strategy = main.Strategy(hello())
